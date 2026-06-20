@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gender Equality Vocabulary Game</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+<h1>🌈 Gender Equality Vocabulary Game 🌈</h1>
+
+<div id="home">
+
+<div class="cute-box">
+<h2>Choose Your Mission!</h2>
+
+<button class="menu-btn" onclick="showQuiz()">
+🎀 Meaning Challenge
+</button>
+
+<button class="menu-btn" onclick="showSpeech()">
+🎤 Pronunciation Challenge
+</button>
+
+</div>
+
+</div>
+
+<div id="quizPage" class="hidden">
+
+<h2>🎀 Meaning Challenge</h2>
+
+<div class="card">
+
+<h3 id="word"></h3>
+
+<div id="options"></div>
+
+<p id="message"></p>
+
+<button id="nextBtn" class="hidden">
+Next →
+</button>
+
+</div>
+
+</div>
+
+<div id="speechPage" class="hidden">
+
+<h2>🎤 Pronunciation Challenge</h2>
+
+<div class="card">
+
+<h3 id="speechWord"></h3>
+
+<p id="ipa"></p>
+
+<button id="micBtn">
+🔊 Speak
+</button>
+
+<div class="scoreBox">
+<div id="percent">0%</div>
+</div>
+
+<p id="speechMessage"></p>
+
+<button id="nextSpeech" class="hidden">
+Next →
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="data.js"></script>
+<script src="quiz.js"></script>
+<script src="speech.js"></script>
+
+</body>
+</html>
